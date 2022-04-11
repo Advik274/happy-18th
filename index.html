@@ -1,0 +1,192 @@
+<html>
+<head>
+    <title>Utshu 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <embed src="/html/Kalimba.mp3" loop="true" autostart="true" width="2" height="0">
+    <div class="hero">
+        
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="https://happy-birthday-utsha.netlify.app/">Journey</a></li>
+                <li><a href="Photo-slider/index.html">Special-one</a></li>
+                <li><a href="Her-reaction/index.html">Your-reactions⠀⠀</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </nav>
+
+        <div class="info">
+            <h1>Happy <span>18ᵗʰ</span> Utsha</h1>
+            <p>This gonna be the best gift i ever created<br>Enjoy every single atom of the gift because it is the result of your love and affection! <br>Lots of love my Angel ♡" </p>
+           <div id="button" >
+            <a href="#modal-opened" class="link-1" id="modal-closed" onclick="playSound();" >celebrate</a>
+            <audio id="audio" src="music.mp3" autoplay="false" ></audio>
+           </div> 
+            
+        </div>
+        <div class="img-box">
+            <img src="images/pattern.png" class="back-img">
+            <img src="images/Utshu.png" class="main-img">
+        </div>
+        <div class="my">
+            <div class="modal-container" id="modal-opened">
+                <div class="modal">
+              
+                  <div class="modal__details">
+                    <h1 class="modal__title">Sanadvik</h1>
+                  </div>
+              
+                  <p class="modal__text">Pta nhi kha se suru kru
+                    I really don't know how to say
+                    26th mai suru kiya tha now it's 15th
+                    
+                    Pta nhi kyu hai tumse itna pyaar
+                    sochta v hu toh muh per smile aa jati hai ek
+                    I wish ki phir se voh time la pau jb hum mile the
+                    
+                    I just want to say Happy Birthday
+                    Mai janta hu bhout bura time chal rha hai tumhare liye yeh
+                    
+                    Bas ek choti se smile tumhare chehre per laane ki
+                    kosis krunga mai aaj
+                    
+                    I know bhout gussa krta hu mai kai baar,
+                    but you have no clue what i feel for you
+                    yeh btane ki choti se kosis krunga mai aaj.
+                    
+                    I miss you Utsha
+                    aur lagta hai ki har takleef mai tum yaha hote 
+                    jaise lga lete tum mujhe gle
+                    
+                    I know bhout bura hu aur krta v hu gande gande kaam
+                    per agar tum na hoti toh sayad mai bethke na padh rha hota aaj
+                    
+                    Mai bhout distract tha aur sayad issiliye bhagwan ne veja tumhe mere pass
+                    verna mai kha aur tum kha
+                    
+                    Saara tension, uljhan, frustration ek dumse ho jata hai khatam
+                    jab aate ho aap mind mai..
+                    I really don't know it's my love aur what
+                    
+                    Yeh friendship ka jarur rishta hai
+                    per us-se kahi jayada thick sa hai
+                    meri saari uljhan, tension tumhare saamne kha tikti hai
+                    issiliye sayad nhi ja pata hai tumse dur
+                    
+                    I am sorry Utsha
+                    ki nhi krta hu kabhi kabhi reply
+                    I am sorry ki rude ho jata hai kabhi kabhi
+                    mere baat krne ka tone,
+                    I am sorry ki chor deta hu kabhi kabhi tumhara saath,
+                    I am sorry ki nhi kr pata hu mai tumhe motivate,
+                    I am sorry ki mai bhout krta hu ladai,
+                    I am sorry ki choti choti baat per rota hu,
+                    
+                    kya tu mere jaane ke baad ache se padh pati hai Utsha?
+                    Backlog bhout tha na coverup kr pati hai Utsha?
+                    mujhe bhout kuch khna hota hai,
+                    per pta nhi kyu rukh jata hu mai.
+                    
+                    Us din se mai derta hu jab nhi uthaoge aap mera call
+                    aur automated aavaj bolegi ki 
+                    The person you're trying is not your anymore!
+                    yeh daar mujhe hamesha satata hai Sana
+                    
+                    I scared of being alone
+                    Utsha, tere bina mera aur dos hai he kon?
+                    
+                    I know yeh sab maine phale kabhi bola nhi hai
+                    That's little overwhelwing For you
+                    
+                    Lekin bhout samay se tha yeh sab duo
+                    ki tu khush rahe, healthy rahe, mushkurati rhe
+                    Upperwale se mai yahi krta hu prey
+                    
+                    Happy Birthday Lovie
+                    Love you...</p>
+                    
+                    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀- Purely  written by your Adu 💖
+                  <a href="#modal-closed" class="link-2"></a>
+              
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+
+        var icon = document.getElementById("icon");
+
+        if(localStorage.getItem("theme") == null){
+        localStorage.setItem("theme", "light");
+    }
+
+    let localData = localStorage.getItem("theme");
+
+    if(localData == "light"){
+        icon.src = "images/moon.png";
+        document.body.classList.remove("dark-theme");
+    }
+
+    else if(localData == "dark"){
+        icon.src = "images/sun.png";
+        document.body.classList.add("dark-theme");
+    }
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "images/sun.png";
+            localStorage.setItem("theme", "dark");
+        }else {
+            icon.src = "images/moon.png";
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    document.addEventListener("dblclick", () => {
+            document.documentElement.requestFullscreen().catch((e) => {
+                console.log(e);
+
+            });
+          });
+
+    </script>
+
+        <script src="confetti.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 2000); // 2000 is time that after 2 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  Stop
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 8000); // 8000 is time that after 8 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
+    </script>
+    <script>
+        function playSound() {
+  var sound = document.getElementById("audio");
+  sound.loop = false;
+  sound.play();
+}
+    </script>
+    
+</body>
+</html>
