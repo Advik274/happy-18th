@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <embed src="/html/Kalimba.mp3" loop="true" autostart="true" width="2" height="0">
+    
     <div class="hero">
         
         <nav>
@@ -21,8 +21,8 @@
             <h1>Happy <span>18ᵗʰ</span> Utsha</h1>
             <p>This gonna be the best gift i ever created<br>Enjoy every single atom of the gift because it is the result of your love and affection! <br>Lots of love my Angel ♡" </p>
            <div id="button" >
-            <a href="#modal-opened" class="link-1" id="modal-closed" onclick="playSound();" >celebrate</a>
-            <audio id="audio" src="music.mp3" autoplay="false" ></audio>
+            <a href="#modal-opened" class="link-1" id="modal-closed" onclick="audio.play();" >celebrate</a>
+            
            </div> 
             
         </div>
@@ -180,13 +180,11 @@
         start();
         stop();
     </script>
-    <script>
-        function playSound() {
-  var sound = document.getElementById("audio");
-  sound.loop = false;
-  sound.play();
-}
-    </script>
+    
+    <script type="text/javascript">
+    const audio = new Audio();
+    audio.src = "./music.mp3";
+  </script>
     
 </body>
 </html>
