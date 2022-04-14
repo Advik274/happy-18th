@@ -8,7 +8,7 @@
 </head>
 
 <body>
-
+<div id="preloader"></div>
     <div class="hero">
         <div class="carousel">
             <ul>
@@ -149,6 +149,13 @@
       window.open(
         "https://happy-18th.vercel.app/", "_blank");
   }
+</script>
+	<script>
+  var loader = document.getElementById("preloader");
+
+  window.addEventListener("load", function(){
+      loader.style.display = "none";
+  })
 </script>
 </body>
 
